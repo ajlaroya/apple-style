@@ -42,7 +42,7 @@ const Performance = () => {
         scrollTrigger: {
           trigger: sectionEl,
           start: "top bottom",
-          end: "bottom top",
+          end: "center center",
           scrub: 1,
           invalidateOnRefresh: true,
         },
@@ -66,8 +66,6 @@ const Performance = () => {
     },
     { scope: sectionRef, dependencies: [isMobile] }
   );
-
-  // 1:44:37
 
   return (
     <section id="performance" ref={sectionRef}>
